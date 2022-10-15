@@ -29,7 +29,7 @@ public class CourseController {
         return new Course("Java",100,"Morning");
     }
 
-    @GetMapping(value = "courses", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "courses", produces = MediaType.APPLICATION_XML_VALUE)
     public List<Course> getCourses(){
         return courses;
     }

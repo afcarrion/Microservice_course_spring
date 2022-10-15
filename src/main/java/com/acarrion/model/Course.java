@@ -1,5 +1,8 @@
 package com.acarrion.model;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JacksonXmlRootElement
 public class Course {
     private String name;
     private int duration;
