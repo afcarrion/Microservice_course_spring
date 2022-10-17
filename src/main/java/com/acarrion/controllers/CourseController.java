@@ -57,7 +57,7 @@ public class CourseController {
     @PutMapping(value="course", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public Course updateCourse(@RequestBody Course course){
         Course auxCourse = new Course();
-        for (int i=0; i>= courses.size();i++){
+        for (int i=0; i<courses.size();i++){
             if(courses.get(i).getName().equals(course.getName())){
                 courses.set(i, course);
                 auxCourse = courses.get(i);
